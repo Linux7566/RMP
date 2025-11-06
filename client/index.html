@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Маркетплейс</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">Интернет-магазин</div>
+    <nav>
+      <a href="#" class="tab active" data-tab="products">Товары</a>
+      <a href="#" class="tab" data-tab="clients">Клиенты</a>
+      <a href="#" class="tab" data-tab="orders">Заказы</a>
+    </nav>
+    <div class="cart">
+      🛒 <span id="cart-count">0</span>
+    </div>
+  </header>
+
+  <main>
+    
+    <section id="products" class="tab-content active">
+      <h2>Каталог</h2>
+      <div class="slider">
+        <button class="arrow left">‹</button>
+        <div class="slider-track" id="product-slider">
+          <div class="item" data-name="Товар" data-price="300">
+            <div class="image-placeholder">Изображение</div>
+            <p>Товар</p>
+            <div class="price">300 ₽</div>
+            <div class="buttons">
+              <button class="minus">-</button>
+              <span class="count">0</span>
+              <button class="plus">+</button>
+            </div>
+          </div>
+          <div class="item" data-name="Товар" data-price="250">
+            <div class="image-placeholder">Изображение</div>
+            <p>Товар</p>
+            <div class="price">250 ₽</div>
+            <div class="buttons">
+              <button class="minus">-</button>
+              <span class="count">0</span>
+              <button class="plus">+</button>
+            </div>
+          </div>
+          <div class="item" data-name="Товар" data-price="500">
+            <div class="image-placeholder">Изображение</div>
+            <p>Товар</p>
+            <div class="price">500 ₽</div>
+            <div class="buttons">
+              <button class="minus">-</button>
+              <span class="count">0</span>
+              <button class="plus">+</button>
+            </div>
+          </div>
+          <div class="item" data-name="Товар" data-price="150">
+            <div class="image-placeholder">Изображение</div>
+            <p>Товар</p>
+            <div class="price">150 ₽</div>
+            <div class="buttons">
+              <button class="minus">-</button>
+              <span class="count">0</span>
+              <button class="plus">+</button>
+            </div>
+          </div>
+          <div class="item" data-name="Товар" data-price="150">
+            <div class="image-placeholder">Изображение</div>
+            <p>Товар</p>
+            <div class="price">150 ₽</div>
+            <div class="buttons">
+              <button class="minus">-</button>
+              <span class="count">0</span>
+              <button class="plus">+</button>
+        </div>
+        <button class="arrow right">›</button>
+      </div>
+    </section>
+
+    
+    <section id="clients" class="tab-content">
+      <h2>Клиенты</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Имя</th>
+            <th>Возраст</th>
+            <th>Рейтинг</th>
+            <th>Роль</th>
+            <th>Информация</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>Иван</td><td>2002</td><td>4,5</td><td>user</td><td>юзер</td></tr>
+          <tr><td>2</td><td>Анна</td><td>2004</td><td>3</td><td>user</td><td>юзер</td></tr>
+          <tr><td>3</td><td>Олег</td><td>2000</td><td>4,8</td><td>user</td><td>юзер</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    
+    <section id="orders" class="tab-content">
+      <h2>Заказы</h2>
+      <ul id="orders-list">
+        <li>Пока нет заказов</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
