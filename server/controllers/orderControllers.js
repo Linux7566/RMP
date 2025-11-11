@@ -23,3 +23,19 @@ export const postOrder = async(req,res,next) => {
         next(err)
     };
 }
+
+export const updateStatusOrder = async(req,res,next) => {
+    try {
+        const {id} = req.params;
+        const {status} = req.body;
+        const order = await Order.findByPk(id);
+        if (!order) return res.status(404).json({message: 'Заказ не найден'});
+
+        order.status = status 
+        await order.save()
+        res.json(order);
+    }
+    catch(err) {
+        next(err)
+    };
+}
