@@ -1,5 +1,5 @@
 // Переключение вкладок
-const tabs = document.querySelectorAll(".tab");
+/*const tabs = document.querySelectorAll(".tab");
 const contents = document.querySelectorAll(".tab-content");
 
 tabs.forEach(tab => {
@@ -58,4 +58,4 @@ document.querySelector(".arrow.left").addEventListener("click", () => {
 });
 document.querySelector(".arrow.right").addEventListener("click", () => {
   slider.scrollBy({ left: 250, behavior: "smooth" });
-});
+});*/

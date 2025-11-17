@@ -50,8 +50,8 @@ main {
 
 .slider {
   display: flex;
-  align-items: center;
   justify-content: center;
+
 }
 
 .slider-track {
@@ -59,6 +59,7 @@ main {
   overflow: hidden;
   scroll-behavior: smooth;
   width: 100%;
+  justify-content: center;
 }
 
 .item {
@@ -111,7 +112,7 @@ main {
   cursor: pointer;
 }
 
-.buttons button:hover {
+/*.buttons button:hover {
   background: #0056b3;
 }
 
